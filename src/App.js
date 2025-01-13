@@ -27,7 +27,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/cycle-website">
       <CookieBanner /> {/* Уведомление о куки */}
       <Routes>
         <Route path="/" element={<HomePage />} />
