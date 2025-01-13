@@ -1,0 +1,40 @@
+.no-products-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #2c1c5b, #6a0dad); /* Черно-фиолетовый градиент */
+    color: white;
+    text-align: center;
+  }
+  
+  .message-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+    padding: 30px 50px;
+    border-radius: 15px;
+    max-width: 600px;
+  }
+  
+  .message-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .message-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .message-container {
+    animation: fadeIn 2s ease-out;
+  }
+  

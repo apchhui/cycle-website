@@ -1,0 +1,61 @@
+/* Основные стили для контейнера */
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in; /* Анимация появления */
+  }
+  
+  /* Заголовок страницы */
+  h1 {
+    color: #8A2BE2; /* Фиолетовый цвет */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тень для текста */
+  }
+  
+  /* Список туториалов */
+  .tutorial-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Элементы списка */
+  .tutorial-list li {
+    margin: 20px 0;
+    background-color: #1A1A1A; /* Тёмный фон для карточек */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для карточек */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tutorial-list li:hover {
+    transform: translateY(-5px); /* Эффект поднятия при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Увеличенная тень */
+  }
+  
+  /* Ссылки в списке */
+  .tutorial-link {
+    color: #8A2BE2; /* Фиолетовый цвет */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .tutorial-link:hover {
+    color: #9400D3; /* Более яркий фиолетовый при наведении */
+  }
+  
+  /* Анимация появления */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

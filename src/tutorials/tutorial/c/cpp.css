@@ -1,0 +1,50 @@
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  h1 {
+    color: #8A2BE2; /* Фиолетовый цвет */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание кнопок по центру */
+    gap: 20px; /* Расстояние между кнопками */
+  }
+  
+  .tutorial-button {
+    background-color: #8A2BE2; /* Фиолетовый фон */
+    color: #FFF; /* Белый текст */
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px; /* Фиксированная ширина кнопок */
+    text-align: center; /* Выравнивание текста по центру */
+  }
+  
+  .tutorial-button:hover {
+    background-color: #9400D3; /* Более яркий фиолетовый при наведении */
+    transform: translateY(-5px); /* Эффект поднятия */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
