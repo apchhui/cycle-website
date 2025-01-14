@@ -132,10 +132,10 @@ body {
 /* Футер */
 .footer {
     text-align: center;
-    padding: 15px; /* Уменьшаем отступы */
+    padding: 20px; /* Уменьшаем отступы */
     background-color: #2c1c5b;
     color: #f4f4f9;
-    font-size: 0.8rem; /* Уменьшаем размер шрифта */
+    font-size: 0.9rem; /* Уменьшаем размер шрифта */
     position: relative;
     z-index: 1;
 }
@@ -201,6 +201,35 @@ body {
     .footer {
         padding: 10px; /* Уменьшаем отступы */
         font-size: 0.7rem; /* Уменьшаем размер шрифта */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px; /* Уменьшаем отступы */
+        font-size: 0.8rem; /* Уменьшаем размер шрифта */
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: center; /* Центрирование элементов */
+    }
+
+    .footer a {
+        margin: 5px 0; /* Уменьшаем отступы между ссылками */
+        display: block; /* Каждая ссылка на новой строке */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px; /* Уменьшаем отступы */
+        font-size: 0.7rem; /* Уменьшаем размер шрифта */
+    }
+
+    .footer a {
+        font-size: 0.8rem; /* Уменьшаем размер шрифта для ссылок */
     }
 }
 
