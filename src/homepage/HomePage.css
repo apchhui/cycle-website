@@ -6,6 +6,9 @@ body {
     color: #f4f4f9;
     overflow-x: hidden;
     font-size: 16px; /* Базовый размер шрифта */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота body равна высоте viewport */
 }
 
 /* Плашка с навигацией */
@@ -70,14 +73,14 @@ body {
 
 /* Главная секция */
 .hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #2c1c5b, #6a0dad);
+    flex: 1; /* Растягиваем секцию на всё доступное пространство */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
+    background: linear-gradient(135deg, #2c1c5b, #6a0dad);
     position: relative;
     overflow: hidden;
 }
@@ -138,6 +141,7 @@ body {
     font-size: 0.9rem; /* Уменьшаем размер шрифта */
     position: relative;
     z-index: 1;
+    margin-top: auto; /* Прижимаем футер к низу */
 }
 
 /* Анимации */
@@ -199,13 +203,6 @@ body {
     }
 
     .footer {
-        padding: 10px; /* Уменьшаем отступы */
-        font-size: 0.7rem; /* Уменьшаем размер шрифта */
-    }
-}
-
-@media (max-width: 768px) {
-    .footer {
         padding: 15px; /* Уменьшаем отступы */
         font-size: 0.8rem; /* Уменьшаем размер шрифта */
     }
@@ -223,17 +220,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .footer {
-        padding: 10px; /* Уменьшаем отступы */
-        font-size: 0.7rem; /* Уменьшаем размер шрифта */
-    }
-
-    .footer a {
-        font-size: 0.8rem; /* Уменьшаем размер шрифта для ссылок */
-    }
-}
-
-@media (max-width: 480px) {
     .title {
         font-size: 1.5rem; /* Уменьшаем размер шрифта */
     }
@@ -245,5 +231,14 @@ body {
     .cta {
         font-size: 0.8rem; /* Уменьшаем размер шрифта */
         padding: 6px 12px; /* Уменьшаем размер кнопки */
+    }
+
+    .footer {
+        padding: 10px; /* Уменьшаем отступы */
+        font-size: 0.7rem; /* Уменьшаем размер шрифта */
+    }
+
+    .footer a {
+        font-size: 0.8rem; /* Уменьшаем размер шрифта для ссылок */
     }
 }

@@ -20,9 +20,6 @@ import JsDomPage from './tutorials/tutorial/javascript/JsDomPage';
 import JsFetchPage from './tutorials/tutorial/javascript/JsFetchPage';
 import JsReactPage from './tutorials/tutorial/javascript/JsReactPage';
 import JsTutorialsPage from './tutorials/tutorial/javascript/JsTutorialPage';
-import RegisterPage from './register/RegisterPage'; // Импорт страницы регистрации
-import LoginPage from './register/LoginPage'; // Импорт страницы входа
-import CookieBanner from './register/CookieBanner'; // Импорт уведомления о куки
 import './App.css';
 
 function App() {
@@ -49,8 +46,6 @@ function App() {
         <Route path="/tutorials/js/0" element={<JsFetchPage />} />
         <Route path="/tutorials/js/1" element={<JsReactPage />} />
         <Route path="/tutorials/js/2" element={<JsDomPage />} />
-        <Route path="/register" element={<RegisterPage />} /> {/* Страница регистрации */}
-        <Route path="/login" element={<LoginPage />} /> {/* Страница входа */}
       </Routes>
     </Router>
   );
