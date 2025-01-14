@@ -85,6 +85,7 @@ body {
     overflow: hidden;
 }
 
+
 .hero::before {
     content: '';
     position: absolute;
@@ -99,28 +100,27 @@ body {
 }
 
 .title {
-    font-size: 2.5rem; /* Уменьшаем размер шрифта */
+    font-size: 2.5rem; /* Размер шрифта для десктопов */
     margin: 0;
     animation: fadeIn 2s ease-out;
     color: #f4f4f9;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 .subtitle {
-    font-size: 1.2rem; /* Уменьшаем размер шрифта */
-    margin: 15px 0 30px; /* Уменьшаем отступы */
+    font-size: 1.2rem; /* Размер шрифта для десктопов */
+    margin: 15px 0 30px; /* Отступы для десктопов */
     animation: fadeIn 2s ease-out 0.5s;
     color: #f4f4f9;
     opacity: 0.9;
 }
 
 .cta {
-    padding: 10px 20px; /* Уменьшаем размер кнопки */
-    font-size: 1rem; /* Уменьшаем размер шрифта */
+    padding: 10px 20px; /* Размер кнопки для десктопов */
+    font-size: 1rem; /* Размер шрифта для десктопов */
     color: #6a0dad;
     background-color: #f4f4f9;
     border: none;
-    border-radius: 25px; /* Уменьшаем скругление */
+    border-radius: 25px; /* Скругление углов */
     text-decoration: none;
     animation: bounce 2s infinite;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -135,13 +135,24 @@ body {
 /* Футер */
 .footer {
     text-align: center;
-    padding: 20px; /* Уменьшаем отступы */
+    padding: 20px;
     background-color: #2c1c5b;
     color: #f4f4f9;
-    font-size: 0.9rem; /* Уменьшаем размер шрифта */
+    font-size: 0.9rem;
     position: relative;
     z-index: 1;
     margin-top: auto; /* Прижимаем футер к низу */
+    width: 100%; /* Ширина футера на всю страницу */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    overflow: hidden; /* Скрываем контент, который выходит за пределы */
+}
+
+/* Контент внутри футера */
+.footer-content {
+    max-width: 100%; /* Ограничиваем ширину контента */
+    margin: 0 auto; /* Центрируем контент */
+    padding: 0 20px; /* Добавляем отступы */
+    box-sizing: border-box; /* Учитываем padding в ширине */
 }
 
 /* Анимации */

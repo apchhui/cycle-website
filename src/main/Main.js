@@ -23,6 +23,9 @@ function Main() {
   }, []);
 
   document.body.style.overflow = '';
+  document.addEventListener('DOMContentLoaded', function () {
+      window.scrollTo(0, 0);
+  });
 
   return (
     <div className="main-page">
